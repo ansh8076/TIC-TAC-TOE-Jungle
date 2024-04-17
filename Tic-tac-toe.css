@@ -1,0 +1,222 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-image: url("Untitled design.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.container{
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.game{
+    height: 65vmin;
+    width: 65vmin;
+    background-color: rgba(163, 177, 138, 0.5);
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    height: 15vmin;
+    width: 17vmin;
+    font-size: 8vmin;
+    border-radius: 15%;
+    background-color:rgb(58, 90, 64);
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.box:hover{
+    box-shadow: 5px 5px 8px black;
+    cursor: pointer;
+}
+.fontSize{
+    font-size: 8vmin;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+.msg{
+    font-size: 4vmin;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+.rst{
+    width: 20vmin;
+    height: 7vmin;
+    background-color: blue;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 10px;
+}
+.rst:hover{
+    box-shadow: 2px 3px 10px blue;
+}
+.hide{
+    display: none;
+}
+#new-game{
+    position: relative;
+    top: 0.6rem;
+    height: 7vmin;
+    width: 20vmin;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    transition: 0.5s
+}
+#new-game:hover{
+    box-shadow: 2px 2px 10px black;
+}
+.draw{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 4vmin;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    text-align: center;
+    background-image: url("Untitled design.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    overflow: hidden;
+  }
+  
+  .container {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .game {
+    height: 65vmin;
+    width: 65vmin;
+    background-color: rgba(163, 177, 138, 0.5);
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .box {
+    height: 15vmin;
+    width: 17vmin;
+    font-size: 8vmin;
+    border-radius: 15%;
+    background-color:rgb(58, 90, 64);
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+.box:hover{
+    box-shadow: 5px 5px 8px black;
+    cursor: pointer;
+}
+.fontSize{
+    font-size: 8vmin;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+#msg{
+    font-size: 4vmin;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+
+  #reset-btn {
+    width: 20vmin;
+    height: 7vmin;
+    background-color: blue;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 10px;
+  }
+  #reset-btn:hover{
+    box-shadow: 2px 3px 10px blue;
+  }
+
+  #new-btn {
+    position: relative;
+    top: 0.6rem;
+    height: 7vmin;
+    width: 20vmin;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    transition: 0.5s
+  }
+  #new-btn:hover{
+    box-shadow: 2px 2px 10px black;
+  } 
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
